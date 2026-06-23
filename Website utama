@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOBRIG MOBILE BRIGADE</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#0d1117;color:white}
+header{background:linear-gradient(135deg,#5a0000,#b30000);padding:40px;text-align:center}
+nav{background:#111;padding:12px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold}
+.container{max-width:1100px;margin:auto;padding:20px}
+.card{background:#161b22;padding:20px;border-radius:12px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.box{background:#21262d;padding:15px;border-radius:10px;text-align:center}
+input,select,textarea{width:100%;padding:12px;margin-top:10px;border:none;border-radius:8px;background:#21262d;color:white}
+button{padding:12px 20px;background:#cc0000;color:white;border:none;border-radius:8px;margin-top:10px}
+footer{background:#111;padding:20px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+<h1>MOBRIG MOBILE BRIGADE</h1>
+<p>Komunitas Roblox Brimob Indonesia</p>
+</header>
+
+<nav>
+<a href="#tentang">Tentang</a>
+<a href="#divisi">Divisi</a>
+<a href="#pangkat">Pangkat</a>
+<a href="#rekrutmen">Pendaftaran</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
+<div class="container">
+
+<section id="tentang" class="card">
+<h2>Tentang MOBRIG</h2>
+<p>MOBRIG MOBILE BRIGADE adalah komunitas Roblox bertema POLRI dan BRIMOB.</p>
+</section>
+
+<section id="divisi" class="card">
+<h2>Divisi BRIMOB</h2>
+<div class="grid">
+<div class="box">Pelopor</div>
+<div class="box">Gegana</div>
+<div class="box">Densus</div>
+<div class="box">Provost</div>
+</div>
+</section>
+
+<section id="pangkat" class="card">
+<h2>Pangkat POLRI</h2>
+<div class="grid">
+<div class="box">Siswa</div>
+<div class="box">Bharada</div>
+<div class="box">Bharatu</div>
+<div class="box">Bripda</div>
+<div class="box">Briptu</div>
+<div class="box">Brigadir</div>
+<div class="box">Aipda</div>
+<div class="box">Aiptu</div>
+<div class="box">Ipda</div>
+<div class="box">Iptu</div>
+<div class="box">AKP</div>
+<div class="box">Kompol</div>
+</div>
+</section>
+
+<section id="rekrutmen" class="card">
+<h2>Pendaftaran Anggota</h2>
+<form onsubmit="kirim(); return false;">
+<input type="text" placeholder="Nama Roblox" required>
+<input type="number" placeholder="Umur" required>
+<select required>
+<option>Pilih Divisi</option>
+<option>Pelopor</option>
+<option>Gegana</option>
+<option>Densus</option>
+<option>Provost</option>
+</select>
+<textarea placeholder="Alasan Bergabung"></textarea>
+<button type="submit">Kirim Pendaftaran</button>
+</form>
+</section>
+
+<section id="kontak" class="card">
+<h2>Kontak</h2>
+<p>Discord : https://discord.gg/TPXvP4xnX</p>
+<p>Group Roblox : https://www.roblox.com/groups/322674361</p>
+</section>
+
+</div>
+
+<footer>
+© 2026 MOBRIG MOBILE BRIGADE
+</footer>
+
+<script>
+function kirim(){
+alert('Pendaftaran berhasil dikirim!');
+}
+</script>
+
+</body>
+</html>
